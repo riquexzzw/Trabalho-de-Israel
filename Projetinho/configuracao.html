@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLook - Minhas Medidas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>FitLook 👕</h1>
+    <nav class="menu">
+      <a href="index.html">Provador</a>
+      <a href="configuracao.html" class="active">Minhas Medidas</a>
+      <a href="planejamento.html">Sobre o Projeto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Configuração de Perfil Corporal</h2>
+      <p style="margin-bottom: 16px; font-size: 14px; color: #666;">
+        Cadastre suas medidas corporais padrão para reutilizar em compras futuras no FitLook.
+      </p>
+
+      <form id="form-configuracao">
+        <div class="form-group">
+          <label for="cfg-altura">Altura (cm):</label>
+          <input type="number" id="cfg-altura" placeholder="Ex: 175">
+        </div>
+
+        <div class="form-group">
+          <label for="cfg-peso">Peso (kg):</label>
+          <input type="number" id="cfg-peso" placeholder="Ex: 70">
+        </div>
+
+        <div class="form-group">
+          <label for="cfg-torax">Tórax / Busto (cm):</label>
+          <input type="number" id="cfg-torax" placeholder="Ex: 94">
+        </div>
+
+        <div class="form-group">
+          <label for="cfg-cintura">Cintura (cm):</label>
+          <input type="number" id="cfg-cintura" placeholder="Ex: 88">
+        </div>
+
+        <button type="submit">Salvar Perfil</button>
+      </form>
+      
+      <p id="mensagem-sucesso" style="margin-top: 12px; color: green; font-weight: bold;" class="hidden">
+        Medidas salvas com sucesso!
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

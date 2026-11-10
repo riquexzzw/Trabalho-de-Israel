@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLook - Provador Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>FitLook 👕</h1>
+    <nav class="menu">
+      <a href="index.html" class="active">Provador</a>
+      <a href="configuracao.html">Minhas Medidas</a>
+      <a href="planejamento.html">Sobre o Projeto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>1. Selecione o Produto</h2>
+      <div class="form-group">
+        <label for="select-produto">Peça de Roupa:</label>
+        <select id="select-produto">
+          <option value="tshirt-01">Camiseta Basic FitLook (P, M, G, GG)</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. Informe suas Medidas</h2>
+      <form id="form-provador">
+        <div class="form-group">
+          <label for="torax">Tórax / Busto (cm):</label>
+          <input type="number" id="torax" placeholder="Ex: 94" required min="50" max="180">
+        </div>
+
+        <div class="form-group">
+          <label for="cintura">Cintura (cm):</label>
+          <input type="number" id="cintura" placeholder="Ex: 88" required min="40" max="160">
+        </div>
+
+        <div class="form-group">
+          <label for="caimento">Preferência de Caimento:</label>
+          <select id="caimento">
+            <option value="justo">Justo</option>
+            <option value="normal" selected>Normal</option>
+            <option value="largo">Largo / Folgado</option>
+          </select>
+        </div>
+
+        <button type="submit">Calcular Tamanho Ideal</button>
+      </form>
+    </section>
+
+    <section id="resultado-container" class="card hidden">
+      <h2>3. Recomendação de Tamanho</h2>
+      <div id="badge-tamanho" class="badge">--</div>
+      <p id="texto-justificativa"></p>
+      <div id="alerta-incerteza" class="alert hidden"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
