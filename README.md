@@ -9,4 +9,4 @@ Projeto desenvolvido para a disciplina de Front-End.
 - `planejamento.html`: Apresentação e proposta da ideia.
 
 ## Tecnologias
-HTML5, CSS3 e JavaScript (Vanilla).
+HTML5, CSS3 e JavaScript.
